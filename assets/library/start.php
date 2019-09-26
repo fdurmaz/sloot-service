@@ -37,6 +37,9 @@ $assets = $root . "assets/";
         <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
             <ul class="navbar-nav">
                 <li class="nav-item">
+                    <a class="nav-link" href="home.php">Home</a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link" href="pianos.php">Piano's</a>
                 </li>
                 <li class="nav-item">
@@ -46,7 +49,7 @@ $assets = $root . "assets/";
                     <a class="nav-link" href="huren.php">Huren</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="reparatie.php">Revisie</a>
+                    <a class="nav-link" href="revisie.php">Revisie</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="stemmen.php">Stemmen</a>

@@ -2,7 +2,7 @@
 include('assets/library/start.php');
 ?>
 
-<div id="header-home" class="jumbotron jumbotron-fluid">
+<div id="header-home" class="jumbotron jumbotron-fluid header">
     <div class="container">
         <h1 class="display-3">Sloot Piano Service</h1>
         <p class="lead">Wij leveren diensten en adviezen voor alle merken piano's en vleugels</p>
@@ -15,7 +15,7 @@ include('assets/library/start.php');
     <div class="row">
         <div class="d-flex justify-content-lg-between justify-content-center flex-wrap">
             <div class="col-12 col-lg-3 text-center my-3 my-lg-0">
-                <a href="reparatie.php"> <i class="fas fa-store-alt service-icon"></i></a>
+                <a href="pianos.php"> <i class="fas fa-store-alt service-icon"></i></a>
                 <h2 class="pt-2">Piano’s en vleugels</h2>
                 <p><br>
                     We hebben altijd zo’n 15 tot 20 gebruikte piano’s en vleugels in onze showroom staan in
@@ -35,7 +35,7 @@ include('assets/library/start.php');
                 </p>
             </div>
             <div class="col-12 col-lg-3 text-center my-3 my-lg-0">
-                <a href="reparatie.php"> <i class="fas fa-tools service-icon"></i></a>
+                <a href="revisie.php"> <i class="fas fa-tools service-icon"></i></a>
                 <h2 class="pt-2">Reparaties en stemmen</h2>
                 <p><br>
                     We hebben altijd zo’n 15 tot 20 gebruikte piano’s en vleugels in onze showroom staan in
@@ -45,7 +45,7 @@ include('assets/library/start.php');
                 </p>
             </div>
             <div class="col-12 col-lg-3 text-center my-3 my-lg-0">
-                <a href="reparatie.php"> <i class="fas fa-truck service-icon"></i></a>
+                <a href="transport.php"> <i class="fas fa-truck service-icon"></i></a>
                 <h2 class="pt-2">Verhuur en transport</h2>
                 <p><br>
                     We hebben altijd zo’n 15 tot 20 gebruikte piano’s en vleugels in onze showroom staan in
