@@ -1,0 +1,66 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 16px;
+  line-height: 1.5;
+  background-position: center 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* To push the content underneath the navbar */
+  padding-top: 120px;
+}
+
+#navbar {
+  transition: 0.1s;
+  padding-right: 10px;
+    font-size: 17px;
+}
+
+.navbar-brand {
+  margin-right: 0;
+}
+
+@media screen and (min-width: 992px) {
+  .dropdown-divider {
+    display: none;
+  }
+
+  .navbar-brand {
+    margin-right: 1rem;
+  }
+}
+
+#header-home {
+  color: #fff;
+  background-image: url("../images/jumbotron-home.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.service-icon {
+  font-size: 3rem;
+  border: 2px solid #ffae00;
+  border-radius: 100%;
+  padding: 3rem;
+  color: #ffae00;
+  width: 150px;
+  text-align: center;
+}
+
+#header-piano{
+  color: #fff;
+  background-image: url("../images/jumbotron-piano.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+#header-vleugels{
+  color: #fff;
+  background-image: url("../images/jumbotron-vleugels.jpg");
+  background-size: cover;
+  background-position: center;
+}
