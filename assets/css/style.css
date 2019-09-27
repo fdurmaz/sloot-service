@@ -66,12 +66,16 @@ body {
   background-image: url("../images/jumbotron-reparatie.jpg");
 }
 
+#header-huren{
+    background-image: url("../images/jordan-whitfield-BhfE1IgcsA8-unsplash.jpg");
+    }
+
 #header-stemmen{
 
 }
 
 #header-transport{
-
+    background-image: url("../images/jumbotron-transport.jpg");
 }
 
 #header-overons{
