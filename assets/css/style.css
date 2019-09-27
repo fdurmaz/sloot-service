@@ -62,8 +62,6 @@ body {
     background-image: url("../images/jumbotron-vleugels.jpg");
 }
 
-
-
 #header-reparatie{
   background-image: url("../images/jumbotron-reparatie.jpg");
 }
@@ -82,4 +80,8 @@ body {
 
 #header-contact{
 
+}
+
+.fa, .fas {
+    vertical-align: middle;
 }

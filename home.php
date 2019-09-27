@@ -9,8 +9,6 @@ include('assets/library/start.php');
     </div>
 </div>
 
-<!--    <img src="https://via.placeholder.com/400" alt="placeholder link"> -->
-
 <div class="container">
     <div class="row">
         <div class="d-flex justify-content-lg-between justify-content-center flex-wrap">
