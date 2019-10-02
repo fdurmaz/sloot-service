@@ -67,11 +67,11 @@ body {
 }
 
 #header-huren{
-    background-image: url("../images/jordan-whitfield-BhfE1IgcsA8-unsplash.jpg");
+    background-image: url("../images/jumbotron-huren.jpg");
     }
 
 #header-stemmen{
-
+    background-image: url("../images/jumbotron-stemmen.jpg");
 }
 
 #header-transport{
@@ -83,8 +83,8 @@ body {
 }
 
 #header-contact{
-
-}
+    background-image: url("../images/annie-spratt-dWYU3i-mqEo-unsplash.jpg");
+  }
 
 .fa, .fas {
     vertical-align: middle;
