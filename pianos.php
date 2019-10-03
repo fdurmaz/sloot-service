@@ -14,9 +14,8 @@ include_once 'assets/content/products.inc.php';
 <div class="container">
     <div class="row justify-content-center justify-content-md-between flex-wrap">
         <?php foreach ($products['piano'] as $key => $item) {
-            // dump($item);
             echo " <div class=\"col-12 col-md-6 col-xl-4 my-3 d-flex justify-content-center\">
-            <div class=\"card shadow\" style=\"width: 18rem;\">
+            <div class=\"card shadow\" style=\"width: 18rem; \">
                 <img src=\"{$item[2][0]}\" class=\"card-img-top\">
                 <div class=\"card-body\">
                     <h5 class=\"card-title\">{$item[1]['merk']}</h5>
