@@ -2,12 +2,12 @@
 include('assets/library/start.php');
 ?>
 
-    <div id="header-home" class="jumbotron jumbotron-fluid header">
-        <div class="container">
-            <h1 class="display-3">Sloot Piano Service</h1>
-            <p class="lead">Wij leveren diensten en adviezen voor alle merken piano's en vleugels</p>
-        </div>
+<div id="header-home" class="jumbotron jumbotron-fluid header">
+    <div class="container">
+        <h1 class="display-3">Sloot Piano Service</h1>
+        <p class="lead">Wij leveren diensten en adviezen voor alle merken piano's en vleugels</p>
     </div>
+</div>
 
 <div class="container">
     <div class="row">
@@ -69,6 +69,6 @@ include('assets/library/start.php');
             </div>
         </div>
     </div>
-<?php
-include("assets/library/end.php");
-?>
+    <?php
+    include("assets/library/end.php");
+    ?>
