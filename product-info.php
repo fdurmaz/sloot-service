@@ -1,4 +1,4 @@
-<?php @include ('assets/library/start.php') ?>
+<?php @include('assets/library/start.php') ?>
 <?php
 include('assets/library/start.php');
 ?>
