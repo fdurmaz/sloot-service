@@ -1,4 +1,11 @@
 <?php
+/*
+PART 1: text parts of the products into array 'items'
+ - images require a standard naming 
+PART 2: adding the images per product to the new array 'products', parts products[pianos] en products[vleugels]
+*/
+
+//   PART 1 -----
 
 $items = array(
 /*	array(
@@ -38,7 +45,8 @@ $items = array(
 		"kleur"		=> "Zwart hoogglans",
 		"garantie"	=> "",
 		"tekst" 	=> array(
-			"De Smr-techniek maakt deze piano bijzonder. Hierdoor is het mogelijk om dezelfde repetitie-snelheid te halen als bij een vleugel. ",
+			"De Smr-techniek maakt deze piano bijzonder.",
+			"Hierdoor is het mogelijk om dezelfde repetitie-snelheid te halen als bij een vleugel. ",
 			"De buitenkant is opnieuw gepolijst en oogt weer als nieuw.",
 		),
 		"extra"		=> "TOP instrument! Geen plaats voor een vleugel? Dan is dit een fantastisch alternatief",
@@ -224,8 +232,70 @@ $items = array(
 		"extra"		=> "",
 	),
 
-
 );
 
+
+// PART 2 ----
+
+function selectImg($map, $afb)
+{
+    $fotos = array();
+    if (is_dir($map)) {
+        if ($dir = opendir($map)) {
+            while (($foto = readdir($dir)) !== false) {
+                if ($foto != "." && $foto != "..") {
+                    if (strpos($foto, $afb) !== false) {
+                        $fotos[] = $map . $foto;
+                    }
+                }
+            }
+        }
+    }
+    return $fotos;
+}
+function makePrice($num)
+{
+    if ($num == "") {
+        $num = "-";
+    } else {
+        $num = "&euro;&nbsp;" . number_format(floatval($num), 0, ',', '.') . ",-";
+    }
+    return $num;
+}
+function dump($txt)
+{
+    echo "<pre>";
+    print_r($txt);
+    // var_dump($txt);
+    echo "</pre>";
+}
+
+// start array with the 2 major keys 
+$products = array(
+    "piano" => array(),
+    "vleugel" => array(),
+);
+
+foreach ($items as $key => $value) {
+    $naam = $value['merk'] . " / " . $value['model'] . " (" . $value['bouwjaar'] . ")";
+    $afb = $value['merk'] . "-" . $value['model'] . "-(" . $value['bouwjaar'] . ")";
+    $correctie = array(
+        ", " => "-",
+        ". " => "-",
+        " " => "-",
+        "." => "-",
+        "/" => "",
+        "ö" => "oe",
+        "()" => "(----)",
+    );
+    foreach ($correctie as $k => $v) {
+        $afb = str_replace($k, $v, $afb);
+    }
+    // geen spatie, geen komma's, geen punt, ö wordt oe, geen () [jaartal niet ingevuld] wordt (----),
+    $map = "assets/images/products/" . $value['soort'] . "s/";
+    $deze = selectImg($map, $afb);
+    $products[$value['soort']][] = array($naam, $value, $deze, $afb);
+}
+// dump($products);
 
 ?>
