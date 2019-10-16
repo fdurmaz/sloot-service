@@ -1,6 +1,4 @@
-<?php
-include('assets/library/start.php');
-?>
+
 <div id="header-huren" class="jumbotron jumbotron-fluid header">
     <div class="container">
         <h1 class="display-3">Huren</h1>
@@ -28,6 +26,3 @@ include('assets/library/start.php');
         </div>
     </div>
 </div>
-<?php
-include('assets/library/end.php');
-?>

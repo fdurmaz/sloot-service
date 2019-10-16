@@ -36,33 +36,11 @@ $assets = $root . "assets/";
 
         <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
             <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="home.php">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="pianos.php">Piano's</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="vleugels.php">Vleugels</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="huren.php">Huren</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="revisie.php">Revisie</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="stemmen.php">Stemmen</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="transport.php">Transport</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="over-ons.php">Over ons</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="contact.php">Contact</a>
-                </li>
+                <?php 
+                    foreach(explode('-', MAIN_NAVI) as $url){
+                            echo "<li class=\"nav-item\"><a class=\"nav-link\" href=\"" . strtolower ( str_replace("'","", str_replace(" ","-", $url)) ) . "\">{$url}</a></li>";
+                    }
+                ?>
             </ul>
         </div>
     </nav>
