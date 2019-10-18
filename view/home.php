@@ -1,4 +1,3 @@
-
 <div id="header-home" class="jumbotron jumbotron-fluid header">
     <div class="container">
         <h1 class="display-3">Sloot Piano Service</h1>
@@ -9,13 +8,14 @@
 <div class="container">
     <div class="row">
         <div class="d-flex justify-content-lg-between justify-content-center flex-wrap">
-            <div class="col-12 col-md-6 col-lg-3 text-center my-3 my-lg-0">
-                <a href="pianos"> <i class="fas fa-store-alt service-icon"></i></a>
+            <div class="col-12 col-md-6 col-lg-3 text-left my-3 my-lg-0">
+                <a href="pianos"><i class="fas fa-store-alt service-icon"></i></a>
                 <h2 class="pt-2">Piano’s en vleugels</h2>
                 <p>
                     We hebben altijd zo’n 15 tot 20 gebruikte piano’s en vleugels in onze showroom staan in verschillende prijsklassen, dus er staat voor u wellicht ook een piano of vleugel tussen.
                     <br>
                     Bekijk ons aanbod <a href="pianos">piano's</a> en <a href="pianos">vleugels</a>. <br><br>
+                    
                     Ook kunt u bij ons terecht als u een nieuwe piano of vleugel zoekt. We zijn de Nederlandse dealer van Feurich. U kunt diverse modellen bij ons proberen.
                     <br>
                     We nemen graag alle tijd voor u.
@@ -24,7 +24,7 @@
 
                 </p>
             </div>
-            <div class="col-12 col-md-6 col-lg-3 text-center my-3 my-lg-0">
+            <div class="col-12 col-md-6 col-lg-3 text-left my-3 my-lg-0">
                 <a href="over-ons"> <i class="fas fa-music service-icon"></i></a>
                 <h2 class="pt-2">Over Sloot Pianoservice</h2>
                 <p>
@@ -35,7 +35,7 @@
                     Kom eens langs om uw wensen met ons te bespreken.
                 </p>
             </div>
-            <div class="col-12 col-md-6 col-lg-3 text-center my-3 my-lg-0">
+            <div class="col-12 col-md-6 col-lg-3 text-left my-3 my-lg-0">
                 <a href="revisie"> <i class="fas fa-tools service-icon"></i></a>
                 <h2 class="pt-2">Reparaties en stemmen</h2>
                 <p>
@@ -48,7 +48,7 @@
                     <a href="stemmen">Bekijk onze tarieven <span class="fas fa-arrow-right"></span></a>
                 </p>
             </div>
-            <div class="col-12 col-md-6 col-lg-3 text-center my-3 my-lg-0">
+            <div class="col-12 col-md-6 col-lg-3 text-left my-3 my-lg-0">
                 <a href="transport"> <i class="fas fa-truck service-icon"></i></a>
                 <h2 class="pt-2">Verhuur en transport</h2>
                 <p>
