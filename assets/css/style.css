@@ -94,3 +94,7 @@ body {
 .fas {
   vertical-align: middle;
 }
+
+.active {
+  border-bottom: 3px solid #ffae00;
+}

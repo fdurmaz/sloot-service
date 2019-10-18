@@ -22,8 +22,7 @@ class Htmlhelper
 				include($view_file);
 			}
 		} else {
-			exit('bla');
-			// include(DIR_PATH . "/view/template/error.php");
+			include(DIR_PATH . "/view/template/error.php");
 		}
 
 		$html = ob_get_contents();
