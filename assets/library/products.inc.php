@@ -8,20 +8,6 @@ PART 2: adding the images per product to the new array 'products', parts product
 //   PART 1 -----
 
 $items = array(
-/*	array(
-		"soort"		=> "",
-		"merk"		=> "",
-		"model"		=> "",		
-		"bouwjaar"	=> "",
-		"prijs"		=> "",
-		"kleur"		=> "",
-		"garantie"	=> "",
-		"tekst" 	=> array(
-			"",
-		),
-		"extra"		=> "",
-	),
-*/	
 	array(
 		"soort"		=> "piano",
 		"merk"		=> "Steinway",
@@ -253,6 +239,7 @@ function selectImg($map, $afb)
     }
     return $fotos;
 }
+
 function makePrice($num)
 {
     if ($num == "") {
@@ -262,11 +249,11 @@ function makePrice($num)
     }
     return $num;
 }
+
 function dump($txt)
 {
     echo "<pre>";
     print_r($txt);
-    // var_dump($txt);
     echo "</pre>";
 }
 
