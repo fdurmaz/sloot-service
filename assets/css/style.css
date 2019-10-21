@@ -99,6 +99,21 @@ body {
   border-bottom: 3px solid #ffae00;
 }
 
-.list-unstyled li {
-  list-style: none;
+.color-yellow {
+  color: #ffae00;
+}
+
+footer a {
+  color: #fff;
+  transition: 0.25s ease-in-out;
+  font-weight: 300;
+}
+
+footer a:hover {
+  color: #ffae00;
+  text-decoration: none;
+}
+
+.footer-text {
+  max-width: 300px;
 }

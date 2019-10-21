@@ -1,22 +1,22 @@
 </div>
-<div class="container-fluid bg-dark text-white text-center" style="border-top: 4px solid #ffae00;">
+<footer class="container-fluid bg-dark text-white text-center" style="border-top: 4px solid #ffae00;">
     <div class="row py-5">
         <div class="col-md-4">
-            <h3 class="title">Contact</h3>
-            <p class="font-weight-light">
+            <h3 class="title color-yellow">Contact</h3>
+            <p class="font-weight-light mx-auto footer-text">
                 Heeft u een pianostemmer nodig?
                 Of gaat u binnenkort uw piano of
-                vleugel verhuizen? We kunnen u helpen.
+                vleugel verhuizen? Wij kunnen u helpen.
             </p>
 
             <ul class="list-unstyled">
-                <li>Telefoon - Eric Sloot: <a href="tel:0622187427">06-22187427</a></li>
-                <li>Telefoon - Rutger Sloot: <a href="tel:0629052155">06-29052155</a></li>
-                <li>E-mailadres - <a href="mailto:info@slootpianoservice.nl">info@slootpianoservice.nl</a></li>
+                <li>Telefoon - Eric Sloot: <a href="tel:0622187427" class="color-yellow">06-22187427</a></li>
+                <li>Telefoon - Rutger Sloot: <a href="tel:0629052155" class="color-yellow">06-29052155</a></li>
+                <li>E-mailadres - <a href="mailto:info@slootpianoservice.nl" class="color-yellow">info@slootpianoservice.nl</a></li>
             </ul>
         </div>
         <div class="col-md-4">
-            <h3 class="title">Diensten</h3>
+            <h3 class="title color-yellow">Diensten</h3>
             <ul class="list-unstyled">
                 <li><a href="pianos">Piano's</a></li>
                 <li><a href="vleugels">Vleugels</a></li>
@@ -26,7 +26,7 @@
             </ul>
         </div>
         <div class="col-md-4">
-            <h3 class="title">Links</h3>
+            <h3 class="title color-yellow">Links</h3>
             <ul class="list-unstyled">
                 <li><a href="home">Home</a></li>
                 <li><a href="over-ons">Over ons</a></li>
@@ -34,7 +34,12 @@
             </ul>
         </div>
     </div>
-</div>
+    <div class="row pb-5">
+        <div class="col-12">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4916.464776417673!2d6.304544!3d51.966188!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c784c38fa44161%3A0xea733e0bb49a8aa6!2sVarsseveldseweg%20130B%2C%207003%20AA%20Doetinchem!5e0!3m2!1snl!2snl!4v1571643491051!5m2!1snl!2snl" class="w-100" style="height: 300px" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+        </div>
+    </div>
+</footer>
 <script type="text/javascript">
     (function() {
         var burger = document.querySelector('.burger');
