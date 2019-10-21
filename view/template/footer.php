@@ -9,7 +9,7 @@
                 vleugel verhuizen? We kunnen u helpen.
             </p>
 
-            <ul>
+            <ul class="list-unstyled">
                 <li>Telefoon - Eric Sloot: <a href="tel:0622187427">06-22187427</a></li>
                 <li>Telefoon - Rutger Sloot: <a href="tel:0629052155">06-29052155</a></li>
                 <li>E-mailadres - <a href="mailto:info@slootpianoservice.nl">info@slootpianoservice.nl</a></li>
