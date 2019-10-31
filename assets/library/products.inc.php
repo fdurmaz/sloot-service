@@ -2,7 +2,7 @@
 /*
 PART 1: text parts of the products into array 'items'
  - images require a standard naming 
-PART 2: adding the images per product to the new array 'products', parts products[pianos] en products[vleugels]
+PART 2: adding the images per product to the new array 'products', parts products[pianos], products[vleugels] en products[accesoires]
 */
 
 //   PART 1 -----
@@ -116,7 +116,7 @@ $items = array(
 		),
 		"extra"		=> "",
 	),
-	/* ---- VLEUGELS -- */
+	/* --- VLEUGELS -- */
 	array(
 		"soort"		=> "vleugel",
 		"merk"		=> "Bösendorfer",
@@ -218,6 +218,91 @@ $items = array(
 		"extra"		=> "",
 	),
 
+	/*--Accessoires--*/
+
+	array(
+		"soort"		=> "accessoires",
+		"merk" 		=> "pianobank",
+		"model"		=> "met opbergvak",
+		"bouwjaar"	=> date('Y'),
+		"prijs"		=> "50",
+		"kleur"		=> "Zwart",
+		"garantie"  => "2",
+		"tekst"		=> array(
+			"",
+		),
+		"extra"		=> "",
+	),
+
+	array(
+		"soort"		=> "accessoires",
+		"merk" 		=> "pianobank",
+		"model"		=> "met opbergvak",
+		"bouwjaar"	=> date('Y'),
+		"prijs"		=> "50",
+		"kleur"		=> "Zwart",
+		"garantie"  => "2",
+		"tekst"		=> array(
+			"",
+		),
+		"extra"		=> "",
+	),
+	
+	
+	array(
+		"soort"		=> "accessoires",
+		"merk" 		=> "pianobank",
+		"model"		=> "met opbergvak",
+		"bouwjaar"	=> date('Y'),
+		"prijs"		=> "50",
+		"kleur"		=> "Zwart",
+		"garantie"  => "2",
+		"tekst"		=> array(
+			"",
+		),
+		"extra"		=> "",
+	),
+
+	array(
+		"soort"		=> "accessoires",
+		"merk" 		=> "pianobank",
+		"model"		=> "met opbergvak",
+		"bouwjaar"	=> date('Y'),
+		"prijs"		=> "50",
+		"kleur"		=> "Zwart",
+		"garantie"  => "2",
+		"tekst"		=> array(
+			"",
+		),
+		"extra"		=> "",
+	),
+	array(
+		"soort"		=> "accessoires",
+		"merk" 		=> "pianobank",
+		"model"		=> "met opbergvak",
+		"bouwjaar"	=> date('Y'),
+		"prijs"		=> "50",
+		"kleur"		=> "Zwart",
+		"garantie"  => "2",
+		"tekst"		=> array(
+			"",
+		),
+		"extra"		=> "",
+	),
+
+	array(
+		"soort"		=> "accessoires",
+		"merk" 		=> "pianobank",
+		"model"		=> "met opbergvak",
+		"bouwjaar"	=> date('Y'),
+		"prijs"		=> "50",
+		"kleur"		=> "Zwart",
+		"garantie"  => "2",
+		"tekst"		=> array(
+			"",
+		),
+		"extra"		=> "",
+	),
 );
 
 
@@ -236,7 +321,7 @@ function selectImg($map, $afb)
                 }
             }
         }
-    }
+	}
     return $fotos;
 }
 
@@ -257,15 +342,16 @@ function dump($txt)
     echo "</pre>";
 }
 
-// start array with the 2 major keys 
+// start array with the 3 major keys 
 $products = array(
     "piano" => array(),
-    "vleugel" => array(),
+	"vleugel" => array(),
+	"accessoires" => array(),
 );
 
 foreach ($items as $key => $value) {
     $naam = $value['merk'] . " / " . $value['model'] . " (" . $value['bouwjaar'] . ")";
-    $afb = $value['merk'] . "-" . $value['model'] . "-(" . $value['bouwjaar'] . ")";
+	$afb = $value['merk'] . "-" . $value['model'] . "-(" . $value['bouwjaar'] . ")";
     $correctie = array(
         ", " => "-",
         ". " => "-",
@@ -277,10 +363,12 @@ foreach ($items as $key => $value) {
     );
     foreach ($correctie as $k => $v) {
         $afb = str_replace($k, $v, $afb);
-    }
+	}
+	// dump($afb);
     // geen spatie, geen komma's, geen punt, ö wordt oe, geen () [jaartal niet ingevuld] wordt (----),
-    $map = "assets/images/products/" . $value['soort'] . "s/";
-    $deze = selectImg($map, $afb);
+	$map = "assets/images/products/" . $value['soort'] . "s/";
+	$map = str_replace("ress", "res", $map);
+	$deze = selectImg($map, $afb);
     $products[$value['soort']][] = array($naam, $value, $deze, $afb);
 }
 // dump($products);

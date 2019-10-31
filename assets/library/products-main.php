@@ -2,12 +2,12 @@
 
 if (!isset($_GET['nr']) || !isset($products['piano'][$_GET['nr']])) {
     // overview of product category 
-?>
 
+?>
 <div class="container">
     <div class="row justify-content-center justify-content-md-between flex-wrap">
         <?php foreach ($products[$soort] as $key => $item) {
-            // dump($item);   
+        //dump($item);   
             echo "        <div class=\"col-12 col-md-6 col-xl-4 my-3 d-flex justify-content-center\">
             <div class=\"card shadow\" style=\"width: 18rem; \">
                 <img src=\"{$item[2][0]}\" class=\"card-img-top\">
