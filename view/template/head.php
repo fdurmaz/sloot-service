@@ -22,6 +22,7 @@ $assets = $root . "assets/";
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/bootstrap/bootstrap.min.css" class="css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
 
     <script src="https://kit.fontawesome.com/1c14924fd9.js" crossorigin="anonymous"></script>
     <script src="./assets/js/navbar-scroll.js"></script>
