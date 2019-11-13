@@ -46,7 +46,7 @@
                     </div>
                 </div>
                 <div class="col-md-12">
-                    <input type="submit" class="btn btn-success btn-send" value="Verzenden">
+                    <input type="submit" class="btn btn-send" style="background-color: #ffae23;" value="Verzenden">
                 </div>
             </div>
             <div class="row">

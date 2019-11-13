@@ -47,7 +47,7 @@ include('view/template/head.php ');
                 Bel ons gerust om een prijsopgave of om meteen een afspraak te maken:<br></p>
             <ul class="list-unstyled">
                 <li class="media">
-                    <img src="https://via.placeholder.com/64" class="mr-3" alt="Eric sloot">
+                    <img src="assets/images/foto-eric.jpg" class="mr-3" alt="Eric sloot">
                     <div class="media-body">
                         <h5 class="mt-0 mb-1">Eric</h5>
                         06-22187427
@@ -55,13 +55,13 @@ include('view/template/head.php ');
                 </li> 
                 
                 <li class="media my-2">
-                    <img src="https://via.placeholder.com/64" class="mr-3" alt="Eric sloot">
+                    <img src="assets/images/foto-rutger.jpg" class="mr-3" alt="Eric sloot">
                     <div class="media-body">
                         <h5 class="mt-0 mb-1">Rutger</h5>
                         06-22187427
                     </div>
                 </li>
-               <li><a href="contact">Of vul het contactformulier in<span class="fas fa-arrow-right" </a><li>
+               <li><a href="contact">Of vul het contactformulier in <span class="fas fa-arrow-right" </a><li>
             </ul>
         </div>
     </div>

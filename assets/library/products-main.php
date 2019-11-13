@@ -3,30 +3,30 @@
 if (!isset($_GET['nr']) || !isset($products['piano'][$_GET['nr']])) {
     // overview of product category 
 
-?>
-<div class="container">
-    <div class="row justify-content-center justify-content-md-between flex-wrap">
-        <?php foreach ($products[$soort] as $key => $item) {
-        //dump($item);   
-            echo "        <div class=\"col-12 col-md-6 col-xl-4 my-3 d-flex justify-content-center\">
+    ?>
+    <div class="container">
+        <div class="row justify-content-center justify-content-md-between flex-wrap">
+            <?php foreach ($products[$soort] as $key => $item) {
+                    //dump($item);   
+                    echo "        <div class=\"col-12 col-md-6 col-xl-4 my-3 d-flex justify-content-center\">
             <div class=\"card shadow\" style=\"width: 18rem; \">
                 <img src=\"{$item[2][0]}\" class=\"card-img-top\">
                 <div class=\"card-body\">
                     <h5 class=\"card-title\">{$item[1]['merk']}</h5>
                     <p class=\"card-text\">{$item[1]['tekst'][0]}</p>
                     <p class=\"card-text\">{$item[1]['extra']}</p>                   
-                    <a href=\"{$_SERVER['PHP_SELF']}?piano={$item[3]}&nr={$key}\" class=\"card-link\">Bekijk deze {$soort} <span class=\"fas fa-arrow-right\"></span></a>
+        <a href=\"" /*$_SERVER['PHP_SELF']*/ . "?piano={$item[3]}&nr={$key}\" class=\"card-link\">Bekijk deze {$soort} <span class=\"fas fa-arrow-right\"></span></a>
                 </div>
             </div>
         </div>
 ";
-        }
-        ?>
+                }
+                ?>
+        </div>
     </div>
-</div>
 <?php
 
-}else{
+} else {
 
     $id = $_GET['nr'];
     $show = $products[$soort][$id];
@@ -55,7 +55,77 @@ if (!isset($_GET['nr']) || !isset($products['piano'][$_GET['nr']])) {
     $blader .= "</div><!-- /blader -->\n";
 
     $page .= $blader;
-    $page .= "  <link rel=\"stylesheet\" type=\"text/css\" href=\"assets/css/lightbox.css\">\n";
+
+    $page .= "
+    <div id=\"header-piano\" class=\"jumbotron jumbotron-fluid header\">
+    <div class=\"container\">
+        <h1 class=\"display-3\">{$show[1]['merk']} - {$show[1]['model']}</h1>\n";
+    if (isset($show[1]['extra']) && strlen($show[1]['extra']) > 1) {
+        $page .= "        <p class=\"lead\">{$show[1]['extra']}</p>\n";
+    }
+    $page .= "
+        </div>
+</div>
+
+<div class=\"container\">
+    <div class=\"row\">
+        <div class=\"col-md-4\">
+            <table class=\"table\">
+                <thead>
+                <tbody>
+                    <tr>
+                        <th scope=\"col\">Merk:</th>
+                        <td scope=\"col\">{$show[1]['merk']}</td>
+                    </tr>
+                    <tr>
+                        <th scope=\"col\">Model:</th>
+                        <td scope=\"col\">{$show[1]['model']}</td>
+                    </tr>
+                    <tr>
+                        <th scope=\"col\">Bouwjaar:</th>
+                        <td scope=\"col\">{$show[1]['bouwjaar']}</td>
+                    </tr>
+                    <tr>
+                        <th scope=\"col\">Prijs:</th>
+                        <td scope=\"col\">&euro;&nbsp;{$show[1]['prijs']}</td>
+                    </tr>
+                    <tr>
+                        <th scope=\"col\">Kleur:</th>
+                        <td scope=\"col\">{$show[1]['kleur']}</td>
+                    </tr>\n";
+    if (isset($show[1]['garantie']) && strlen($show[1]['garantie']) > 0) {
+        $garantie = $show[1]['garantie'] . " jaar";
+    } else {
+        $garantie = "Geen";
+    }
+    $page .= "                    
+                    <tr>
+                        <th scope=\"col\">Garantie:</th>
+                        <td scope=\"col\">{$garantie}</td>
+                    </tr>
+                    
+                 
+                </tbody>
+            </table>
+            <div class=\"row\">
+                <p class=\"col-md-10\">Deze piano is van binnen volledig als nieuw gereviseerd. De buitenkant is opnieuw Hoogglans Zwart gespoten. Een 'must have' voor de liefhebber</p>
+            </div>
+        </div>
+        <div class=\"col-md-8\">
+            <img class=\"m-1\" src=\"https://via.placeholder.com/125\" alt=\"\">
+            <img class=\"m-1\" src=\"https://via.placeholder.com/125\" alt=\"\">
+            <img class=\"m-1\" src=\"https://via.placeholder.com/125\" alt=\"\">
+            <img class=\"m-1\" src=\"https://via.placeholder.com/125\" alt=\"\">
+            <img class=\"m-1\" src=\"https://via.placeholder.com/125\" alt=\"\">
+            <img class=\"m-1\" src=\"https://via.placeholder.com/125\" alt=\"\">
+            <img class=\"m-1\" src=\"https://via.placeholder.com/125\" alt=\"\">
+            <img class=\"m-1\" src=\"https://via.placeholder.com/125\" alt=\"\">
+            <img class=\"m-1\" src=\"https://via.placeholder.com/125\" alt=\"\">
+            <img class=\"m-1\" src=\"https://via.placeholder.com/125\" alt=\"\">
+        </div>
+    </div>
+</div>";
+    /*    $page .= "  <link rel=\"stylesheet\" type=\"text/css\" href=\"assets/css/lightbox.css\">\n";
 
     $page .= "<div class=\"item\">\n";
     $page .= "  <h1>" . $show[1]['merk'] . "</h1>\n";
@@ -79,7 +149,7 @@ if (!isset($_GET['nr']) || !isset($products['piano'][$_GET['nr']])) {
         $page .= "  <p><strong>" . $show[1]['extra'] . "</strong></p>\n";
     }
     $page .= "</div><!-- /item -->\n";
-    /* */
+    /* * /
     // $page .= "\n<div class=\"fotos\">\n";
     $basisfotos = " <!-- Images used to open the lightbox -->\n";
     $basisfotos .= "    <div class=\"fotos\">\n";
@@ -109,10 +179,10 @@ if (!isset($_GET['nr']) || !isset($products['piano'][$_GET['nr']])) {
     $page .= $basisfotos . $vervolgfotos;
     $page .= "  </div><!-- /fotos -->\n";
     $page .= "  <!-- End Modal/Lightbox -->\n\n";
-    $page .= $blader;
+    */
+    //    $page .= $blader;
 
-    $page .= "<script type=\"text/javascript\" language=\"javascript\" src=\"assets/js/lightbox.js\"></script>\n";
+    //  $page .= "<script type=\"text/javascript\" language=\"javascript\" src=\"assets/js/lightbox.js\"></script>\n";
     echo $page;
-
 }
 ?>

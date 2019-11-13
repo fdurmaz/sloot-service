@@ -32,14 +32,14 @@
         <div class="col-12 col-md-6">
             <div class="row">
                 <div class="justify-content-center d-flex flex-wrap">
-                    <img class="col-10 my-3" src="https://via.placeholder.com/400x250">
+                    <img class="col-10 my-3 stemmen-image" src="assets/images/stemmen_eric.jpg">
                     <p class="col-10 text-left">
                         Moet uw piano of vleugel gestemd worden? Neem dan contact met ons op.
                         Dan maken we zo snel mogelijk een afspraak met u om te stemmen.
                     </p>
                     <ul class="list-unstyled col-10 ">
                         <li class="media">  
-                            <img src="https://via.placeholder.com/64" class="mr-3" alt="Eric sloot">
+                            <img src="assets/images/foto-eric.jpg" class="mr-3" alt="Eric sloot">
                             <div class="media-body">
                                 <h5 class="mt-0 mb-1">Eric</h5>
                                 06-22187427
@@ -47,13 +47,13 @@
                         </li>
 
                         <li class="media my-2">
-                            <img src="https://via.placeholder.com/64" class="mr-3" alt="Eric sloot">
+                            <img src="assets/images/foto-rutger.jpg" class="mr-3" alt="Eric sloot">
                             <div class="media-body">
                                 <h5 class="mt-0 mb-1">Rutger</h5>
                                 06-22187427
                             </div>
                         </li>
-                        <li><a href="contact.php">Of vul het contactformulier in<span class="fas fa-arrow-right" </a> <li>
+                        <li><a href="contact.php">Of vul het contactformulier in <span class="fas fa-arrow-right" </a> <li>
                     </ul>
                 </div>
             </div>

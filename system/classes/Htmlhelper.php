@@ -17,6 +17,7 @@ class Htmlhelper
 			if ($headfooter) {
 				include(DIR_PATH . "/view/template/head.php");
 				include($view_file);
+				include(DIR_PATH . "/view/template/socialmedia.php");
 				include(DIR_PATH . "/view/template/footer.php");
 			} else {
 				include($view_file);

@@ -19,11 +19,11 @@
             </div>
         </div>
         <div class="col-md-5">
-            <div class="col-11">
-                <img class="my-1" src="https://via.placeholder.com/125" alt="">
-                <img class="m-1" src="https://via.placeholder.com/125" alt="">
-                <img class="my-1" src="https://via.placeholder.com/125" alt="">
-                <img class="m-1" src="https://via.placeholder.com/125" alt="">
+            <div class="col-md-11">
+                <img class="my-1" src="assets/images/reparatie-rutger-3.jpg" alt="">
+                <img class="m-1" src="assets/images/reparatie-eric-1.jpg" alt="">
+                <img class="my-1" src="assets/images/reparatie-rutger-1.jpg" alt="">
+                <img class="m-1" src="assets/images/reparatie-rutger-2.jpg" alt="">
             </div>
             <a class="m-5" href="contact.php">vul het contactformulier in <span class="fas fa-arrow-right"></a>
         </div>

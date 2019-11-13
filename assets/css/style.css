@@ -92,12 +92,13 @@ body {
 }
 
 .fa,
-.fas {
+.fas,
+.fab{
   vertical-align: middle;
 }
 
 .active {
-  border-bottom: 3px solid #ffae00;
+  border-bottom: 3px soli d #ffae00;
 }
 
 .color-yellow {
@@ -106,15 +107,57 @@ body {
 
 footer a {
   color: #fff;
-  transition: 0.25s ease-in-out;
+  transition: 0.8ms ease-in-out;
   font-weight: 300;
 }
 
 footer a:hover {
   color: #ffae00;
   text-decoration: none;
+ transition: 300ms;
 }
 
 .footer-text {
   max-width: 300px;
 }
+
+.submit-button{
+  background-color: #ffae00;
+  color: black;
+}
+
+
+.socialmedia{
+  color: #fff;
+  font-size: 2rem;
+  border-radius: 100%;
+  border: 2px solid white;
+  width: 25%;
+}
+
+.socialmedia:hover{
+  border: 2px solid #ffae00;
+  color: #ffae00;
+  transition: 300ms;
+}
+
+
+.socialmedia-slider{
+  width: 6%;
+  border: 2px solid #ffae00;
+  border-top-left-radius: 20%;
+  border-bottom-left-radius: 20%;;
+  position: fixed;
+  top: 50%;
+  right: 0;
+  z-index: 100;
+}
+
+.fa-facebook-square{
+  font-size: 1.9rem;
+}
+
+
+
+
+

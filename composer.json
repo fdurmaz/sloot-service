@@ -3,6 +3,9 @@
     	"psr-4": {
       		"Helper\\":"system/classes/"
     	}
+    },
+    "require": {
+        "swiftmailer/swiftmailer": "^6.2"
+        
     }
-
 }
